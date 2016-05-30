@@ -46,7 +46,7 @@
 
     UIImage *findImgNormal = [UIImage imageNamed:@"tabBar_find_normal"];
     UIImage *findImgSelected = [UIImage imageNamed:@"tabBar_find_selected"];
-    UITabBarItem *findPageItem = [[UITabBarItem alloc] initWithTitle:@"发现" image:findImgNormal selectedImage:findImgSelected];
+    UITabBarItem *findPageItem = [[UITabBarItem alloc] initWithTitle:@"分类" image:findImgNormal selectedImage:findImgSelected];
     NavigationController *findNavigation = [[NavigationController alloc]init];
     findNavigation.tabBarItem = findPageItem;
     [findNavigation pushViewController:[[FindViewController alloc] init] animated:NO];

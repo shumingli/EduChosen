@@ -18,6 +18,7 @@
         self.appSize = 0.0f;
         self.appStarNum = 1;
         self.appType = AppTypeNone;
+        self.appDownLoadCount = 0;
     }
     return self;
 }

@@ -13,6 +13,10 @@
 
 }
 /**
+ *  appid
+ */
+@property (nonatomic,strong) NSString *appId;
+/**
  *  app名字
  */
 @property (nonatomic,strong) NSString *appName;
@@ -33,9 +37,17 @@
  */
 @property (nonatomic,assign) double appSize;
 /**
+ *  app 大小
+ */
+@property (nonatomic,strong) NSString *appSizeStr;
+/**
  *  app 类型
  */
 @property (nonatomic,assign) AppType appType;
+/**
+ *  app 下载量
+ */
+@property (nonatomic,assign) NSInteger appDownLoadCount;
 
 
 @end

@@ -8,12 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
+@class AppInfo;
 @interface AppInfoTableViewCell : UITableViewCell{
 
 }
-
+@property (nonatomic,strong,readonly) UIImageView *appIcon;
 @property (nonatomic,strong,readonly) UILabel *appNameLabel;
+@property (nonatomic,strong,readonly) UILabel *appDownLoadLabel;
 @property (nonatomic,strong,readonly) UILabel *appSizeLabel;
-@property (nonatomic,strong,readonly) UIButton *gotoAppBtn;
+@property (nonatomic,strong,readonly) UIButton *gotoAppInfoBtn;
+
+- (void)setAppStars:(NSInteger)stars;
+
+- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier withSize:(CGSize)size;
+
+- (void)setAppInfo:(AppInfo *)appInfo;
 
 @end

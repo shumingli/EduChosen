@@ -21,5 +21,15 @@
  *  获取App所有分类
  */
 @property (nonatomic,strong,readonly) NSArray<AppTypeData *> *typesArray;
+/**
+ *  获取App分类名称
+ *  @return 分类名称
+ */
+- (NSString *)typeNameWithType:(AppType)type;
+/**
+ *  获取App分类对象
+ *  @return 分类对象
+ */
+- (AppTypeData *)typeDataWithType:(AppType)type;
 
 @end

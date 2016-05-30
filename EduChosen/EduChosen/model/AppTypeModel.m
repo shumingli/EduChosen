@@ -53,12 +53,18 @@ static AppTypeModel *model = nil;
             typeName = @"会计";
             break;
         default:
+            typeName = @"测试";
             break;
     }
     return typeName;
 }
 
-
+- (AppTypeData *)typeDataWithType:(AppType)type{
+    if (type > 0 && type <= AppTypeMax) {
+        return _typesArray[type-1];
+    }
+    return NULL;
+}
 
 
 

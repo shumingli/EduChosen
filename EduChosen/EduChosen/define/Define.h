@@ -13,11 +13,16 @@
  des:屏幕大小
  */
 #define ScreeSize [[UIScreen mainScreen] bounds].size
+#define CellSize CGSizeMake(ScreeSize.width, 100)
 
 typedef NS_ENUM(NSInteger, AppType) {
     AppTypeNone,
     AppTypeMedicine, //医学
     AppTypeAccount, //会计
+    AppTypeMedicine1, //医学
+    AppTypeAccount2, //会计
+    AppTypeMedicine3, //医学
+    AppTypeAccount4, //会计
 
     AppTypeMax,
 };

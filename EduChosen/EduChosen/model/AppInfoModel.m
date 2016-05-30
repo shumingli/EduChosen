@@ -50,11 +50,15 @@ static AppInfoModel *model = nil;
 
     for (int i=0; i<20; i++) {
         AppInfo *info = [[AppInfo alloc] init];
+        info.appId = @"992074342";
         info.appName = @"海豹活动";
         info.appIconUrl = @"";
         info.appType = AppTypeMedicine;
-
-        [[_appInfoDic objectForKey:[self getKeyByAppType:AppTypeMedicine]] addObject:info];
+        info.appPrice = 0.0f;
+        info.appSizeStr = @"99.9MB";
+        info.appStarNum = 4;
+        info.appDownLoadCount = 1000;
+        [[_appInfoDic objectForKey:[self getKeyByAppType:info.appType]] addObject:info];
     }
 }
 

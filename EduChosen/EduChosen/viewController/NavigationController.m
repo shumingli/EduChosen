@@ -23,11 +23,10 @@
 
 - (void)initNavigationBar{
     self.navigationBar.barStyle = UIBarStyleBlack;
-
-    UIView *bgView = [[UIView alloc] initWithFrame:self.navigationBar.bounds];
-    bgView.backgroundColor = [UIColor blackColor];
-    [self.navigationBar insertSubview:bgView atIndex:0];
+    self.navigationBar.backgroundColor = [UIColor blackColor];
     self.navigationBar.opaque = YES;
+    self.navigationBar.barTintColor = [UIColor blackColor];
+    self.navigationBar.tintColor = [UIColor whiteColor];
 
     //    UIBarButtonItem *leftButton = [[UIBarButtonItem alloc] initWithTitle:@"左边" style:UIBarButtonItemStyleBordered target:self action:@selector(clickLeftButton)];
 
